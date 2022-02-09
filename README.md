@@ -1,4 +1,4 @@
-# goodwe-sec1000-info-python
+# goodwe-sec1000-info
 
 This repository contains the executable python module `goodwe_sec1000_info` and the script `goodwe_sec1000_info_test.py`.
 
