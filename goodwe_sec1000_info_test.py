@@ -41,16 +41,16 @@ def print_response(data):
     print(hex2str(data[0x1E:0x22]), "\t Current 3 (0.01A units):",
           struct.unpack(">i", data[0x1E:0x22])[0])
 
-    print(hex2str(data[0x22:0x26]), "\t Power 1 (0.001W units):",
+    print(hex2str(data[0x22:0x26]), "\t Power 1 (1W units):",
           struct.unpack(">i", data[0x22:0x26])[0])
-    print(hex2str(data[0x26:0x2A]), "\t Power 2 (0.001W units):",
+    print(hex2str(data[0x26:0x2A]), "\t Power 2 (1W units):",
           struct.unpack(">i", data[0x26:0x2A])[0])
-    print(hex2str(data[0x2A:0x2E]), "\t Power 3 (0.001W units):",
+    print(hex2str(data[0x2A:0x2E]), "\t Power 3 (1W units):",
           struct.unpack(">i", data[0x2A:0x2E])[0])
 
-    print(hex2str(data[0x2E:0x32]), "\t Meter power (0.001W units):",
+    print(hex2str(data[0x2E:0x32]), "\t Meter power (1W units):",
           struct.unpack(">i", data[0x2E:0x32])[0])
-    print(hex2str(data[0x32:0x36]), "\t Inverters power (0.001W units):",
+    print(hex2str(data[0x32:0x36]), "\t Inverters power (1W units):",
           struct.unpack(">i", data[0x32:0x36])[0])
 
     print(hex2str(data[0x36:0x38]), "\t\t Data checksum, calculated =",
